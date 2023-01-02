@@ -145,3 +145,5 @@ gameplay.xcworkspace/xcshareddata/gameplay.xccheckout
 
 .vs
 .vscode
+Debug
+**/Debug

@@ -1,30 +1,13 @@
-﻿  ..\gameplay\res\shaders\colored.frag
-  ..\gameplay\res\shaders\colored.vert
-  ..\gameplay\res\shaders\font.frag
-  ..\gameplay\res\shaders\font.vert
-  ..\gameplay\res\shaders\lighting.frag
-  ..\gameplay\res\shaders\lighting.vert
-  ..\gameplay\res\shaders\skinning-none.vert
-  ..\gameplay\res\shaders\skinning.vert
-  ..\gameplay\res\shaders\sprite.frag
-  ..\gameplay\res\shaders\sprite.vert
-  ..\gameplay\res\shaders\terrain.frag
-  ..\gameplay\res\shaders\terrain.vert
-  ..\gameplay\res\shaders\textured.frag
-  ..\gameplay\res\shaders\textured.vert
-  14 File(s) copied
-  ..\gameplay\res\ui\arial.gpb
-  ..\gameplay\res\ui\default-theme.png
-  ..\gameplay\res\ui\default.theme
-  3 File(s) copied
+﻿  0 File(s) copied
+  0 File(s) copied
           1 file(s) copied.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  Grid.cpp
-gameplay-deps.lib(glew.obj) : warning LNK4099: PDB 'GLEW.pdb' was not found with 'gameplay-deps.lib(glew.obj)' or at 'D:\job\game-engine\editor\Debug\GLEW.pdb'; linking object as if no debug info
+  EditorGame.cpp
 gameplay-deps.lib(lstate.obj) : warning LNK4099: PDB 'lua.pdb' was not found with 'gameplay-deps.lib(lstate.obj)' or at 'D:\job\game-engine\editor\Debug\lua.pdb'; linking object as if no debug info
 gameplay-deps.lib(lapi.obj) : warning LNK4099: PDB 'lua.pdb' was not found with 'gameplay-deps.lib(lapi.obj)' or at 'D:\job\game-engine\editor\Debug\lua.pdb'; linking object as if no debug info
 gameplay-deps.lib(linit.obj) : warning LNK4099: PDB 'lua.pdb' was not found with 'gameplay-deps.lib(linit.obj)' or at 'D:\job\game-engine\editor\Debug\lua.pdb'; linking object as if no debug info
 gameplay-deps.lib(lauxlib.obj) : warning LNK4099: PDB 'lua.pdb' was not found with 'gameplay-deps.lib(lauxlib.obj)' or at 'D:\job\game-engine\editor\Debug\lua.pdb'; linking object as if no debug info
+gameplay-deps.lib(glew.obj) : warning LNK4099: PDB 'GLEW.pdb' was not found with 'gameplay-deps.lib(glew.obj)' or at 'D:\job\game-engine\editor\Debug\GLEW.pdb'; linking object as if no debug info
 gameplay-deps.lib(alError.obj) : warning LNK4099: PDB 'OpenAL32.pdb' was not found with 'gameplay-deps.lib(alError.obj)' or at 'D:\job\game-engine\editor\Debug\OpenAL32.pdb'; linking object as if no debug info
 gameplay-deps.lib(alListener.obj) : warning LNK4099: PDB 'OpenAL32.pdb' was not found with 'gameplay-deps.lib(alListener.obj)' or at 'D:\job\game-engine\editor\Debug\OpenAL32.pdb'; linking object as if no debug info
 gameplay-deps.lib(ALc.obj) : warning LNK4099: PDB 'OpenAL32.pdb' was not found with 'gameplay-deps.lib(ALc.obj)' or at 'D:\job\game-engine\editor\Debug\OpenAL32.pdb'; linking object as if no debug info

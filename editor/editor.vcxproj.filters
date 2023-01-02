@@ -9,6 +9,9 @@
     <ClCompile Include="src\Grid.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\EditorGame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Grid.h">
@@ -18,6 +21,15 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\StateMachine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WelcomeForm.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EditorGame.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
