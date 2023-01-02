@@ -31,11 +31,21 @@ public:
 	}
 
 	/**
+	 * @brief this is the states normal render function
+	 *
+	 * @param entity Entity which will be processed for this state
+	 */
+	virtual void onRender(EntityType* entity)
+	{
+
+	}
+
+	/**
 	 * @brief this is the states normal update function
 	 * 
 	 * @param entity Entity which will be processed for this state
 	 */
-	virtual void onExecute(EntityType* entity)
+	virtual void onUpdate(EntityType* entity)
 	{
 
 	}

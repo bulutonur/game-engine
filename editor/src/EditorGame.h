@@ -5,6 +5,9 @@
 
 using namespace gameplay;
 
+#include "WelcomeForm.h"
+#include "StateMachine.h"
+
  /**
   * Main game class.
   */
@@ -44,6 +47,8 @@ public:
     void gamepadEvent(Gamepad::GamepadEvent evt, Gamepad* gamepad, unsigned int analogIndex = 0);
 
     static EditorGame* getInstance();
+
+    StateMachine<EditorGame>* fsm;
 
 protected:
 

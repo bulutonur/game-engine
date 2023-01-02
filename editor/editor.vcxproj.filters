@@ -12,6 +12,9 @@
     <ClCompile Include="src\EditorGame.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\WelcomeForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Grid.h">

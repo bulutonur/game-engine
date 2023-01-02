@@ -8,6 +8,7 @@ EditorGame game;
 
 EditorGame::EditorGame()
 {
+
 }
 
 void EditorGame::initialize()
@@ -27,23 +28,27 @@ void EditorGame::initialize()
             gamepad->getForm()->setEnabled(false);
         }
     }
+
+    fsm = new StateMachine<EditorGame>(this);
+    fsm->changeState(new WelcomeForm());
 }
 
 void EditorGame::finalize()
 {
-
+    SAFE_DELETE(fsm);
 }
 
 void EditorGame::update(float elapsedTime)
 {
-   
 }
 
 void EditorGame::render(float elapsedTime)
 {
-   
+  
     // Clear the color and depth buffers
     clear(CLEAR_COLOR_DEPTH, Vector4::zero(), 1.0f, 0);
+
+    fsm->render();
 }
 
 void EditorGame::resizeEvent(unsigned int width, unsigned int height)

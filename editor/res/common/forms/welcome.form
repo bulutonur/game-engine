@@ -1,0 +1,85 @@
+form welcome
+{
+    layout = LAYOUT_ABSOLUTE
+    size = 600, 600
+    batchingEnabled = false
+
+	container infoPanel
+    {
+		alignment = ALIGN_TOP_LEFT
+
+		label title
+		{
+			position = 10, 10
+			text = Welcome to Game Engine
+			fontSize = 16
+		}
+
+		image logo
+		{
+			position = 10, 40
+			path = res/png/logo.png
+			size= 32, 32
+		}
+
+		
+		label gameEngine
+		{
+			position = 50, 40
+			text = Game Engine
+			fontSize = 16
+		}	
+
+		label version
+		{
+			position = 50, 58
+			text = 0.0.1
+			fontSize = 16
+		}	
+	}
+
+	container mainButtonsPanel
+    {
+		alignment = ALIGN_TOP_LEFT
+		button projectsButton
+		{
+			position = 0, 110
+			size = 170, 50
+			text = Projects
+		}
+
+		button customizeButton
+		{
+			position = 0, 160
+			size = 170, 50
+			text = Customize
+		}
+
+		button pluginsButton
+		{
+			position = 0, 210
+			size = 170, 50
+			text = Plugins
+		}
+
+		button learnButton
+		{
+			position = 0, 260
+			size = 170, 48
+			text = Learn Game Engine
+		}
+	}
+
+	
+	container secondaryPanel
+    {
+		alignment = ALIGN_RIGHT
+		
+        style = Panel
+
+		size= 400,600
+
+	}
+
+
+}

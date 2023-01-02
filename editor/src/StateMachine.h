@@ -50,7 +50,16 @@ public:
 
 	virtual ~StateMachine()
 	{
-
+		if (currentState)
+		{
+			delete currentState;
+			currentState = nullptr;
+		}
+		if (globalState)
+		{
+			delete globalState;
+			globalState = nullptr;
+		}
 	}
 
 	//use these methods to initialize the FSM
@@ -78,13 +87,32 @@ public:
 		//if a global state exists, call its execute method, else do nothing
 		if (globalState)
 		{
-			globalState->onExecute(owner);
+			globalState->onUpdate(owner);
 		}
 
 		//same for the current state
 		if (currentState)
 		{
-			currentState->onExecute(owner);
+			currentState->onUpdate(owner);
+		}
+	}
+
+	/**
+	 * @brief call this to render the FSM
+	 *
+	 */
+	void render()const
+	{
+		//if a global state exists, call its execute method, else do nothing
+		if (globalState)
+		{
+			globalState->onRender(owner);
+		}
+
+		//same for the current state
+		if (currentState)
+		{
+			currentState->onRender(owner);
 		}
 	}
 
