@@ -1,38 +1,33 @@
 form welcome
 {
     layout = LAYOUT_ABSOLUTE
-    size = 600, 600
+    size = 100%, 100%
     batchingEnabled = false
+	alignment = ALIGN_VCENTER_HCENTER
 
 	container infoPanel
     {
 		alignment = ALIGN_TOP_LEFT
-
-		label title
-		{
-			position = 10, 10
-			text = Welcome to Game Engine
-			fontSize = 16
-		}
+ 		size = 20%, 32
+		position = 0, 0
 
 		image logo
 		{
-			position = 10, 40
+			alignment = ALIGN_TOP_LEFT
 			path = res/png/logo.png
-			size= 32, 32
+			size = 32, 32
 		}
 
-		
 		label gameEngine
 		{
-			position = 50, 40
+			alignment = ALIGN_TOP_HCENTER
 			text = Game Engine
 			fontSize = 16
 		}	
 
 		label version
 		{
-			position = 50, 58
+			alignment = ALIGN_BOTTOM_HCENTER
 			text = 0.0.1
 			fontSize = 16
 		}	
@@ -41,44 +36,39 @@ form welcome
 	container mainButtonsPanel
     {
 		alignment = ALIGN_TOP_LEFT
-		button projectsButton
+		width = 20%
+
+		button newProjectButton
 		{
-			position = 0, 110
-			size = 170, 50
-			text = Projects
+			position = 0, 50
+			size = 100%, 50
+			text = New Project
 		}
 
-		button customizeButton
+		button openProjectButton
 		{
-			position = 0, 160
-			size = 170, 50
-			text = Customize
-		}
-
-		button pluginsButton
-		{
-			position = 0, 210
-			size = 170, 50
-			text = Plugins
+			position = 0, 100
+			size = 100%, 50
+			text = Open Project
 		}
 
 		button learnButton
 		{
-			position = 0, 260
-			size = 170, 48
+			position = 0, 150
+			size = 100%, 50
 			text = Learn Game Engine
+			fontSize = 15
 		}
+
 	}
 
 	
-	container secondaryPanel
+	container projectsPanel
     {
-		alignment = ALIGN_RIGHT
-		
+		alignment = ALIGN_TOP_RIGHT
+		position = 20%, 0
         style = Panel
-
-		size= 400,600
-
+		size = 80%, 100%
 	}
 
 
