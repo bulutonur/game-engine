@@ -8,7 +8,10 @@
 
 /**
  * @brief State machine class. Inherit from this class and create some
- * states to give your agents FSM functionality
+ * states to give your agents FSM functionality.
+ * It used in UI states too.
+ * 
+ * Based on: http://www.ai-junkie.com/architecture/state_driven/tut_state1.html
  *
  * @tparam EntityType base datatype of entity. For example For example UIWindow,or AIAgent...
  */

@@ -168,13 +168,16 @@ copy ..\gameplay\res\logo_powered_white.png res</Command>
   <ItemGroup>
     <ClCompile Include="src\EditorGame.cpp" />
     <ClCompile Include="src\Grid.cpp" />
+    <ClCompile Include="src\SceneForm.cpp" />
     <ClCompile Include="src\WelcomeForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\EditorGame.h" />
     <ClInclude Include="src\Grid.h" />
+    <ClInclude Include="src\SceneForm.h" />
     <ClInclude Include="src\State.h" />
     <ClInclude Include="src\StateMachine.h" />
+    <ClInclude Include="src\TypeMap.h" />
     <ClInclude Include="src\UIState.h" />
     <ClInclude Include="src\WelcomeForm.h" />
   </ItemGroup>

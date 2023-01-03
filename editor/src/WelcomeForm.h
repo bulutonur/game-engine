@@ -6,12 +6,11 @@
 class WelcomeForm : public UIState
 {
 public:
-	WelcomeForm();
-	virtual ~WelcomeForm();
 
 	virtual void onEnter(EditorGame* editor) override;
-	virtual void onRender(EditorGame* editor) override;
 	virtual void onExit(EditorGame* editor) override;
+
+	virtual void controlEvent(Control* control, EventType evt) override;
 
 };
 

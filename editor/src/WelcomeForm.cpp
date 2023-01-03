@@ -1,30 +1,27 @@
 #include "EditorGame.h"
 
-WelcomeForm::WelcomeForm()
-{
-	form = nullptr;
-}
-
-WelcomeForm::~WelcomeForm()
-{
-
-}
-
-
 void WelcomeForm::onEnter(EditorGame* editor)
 {
-	form=gameplay::Form::create("res/common/forms/welcome.form");
-	form->setFocus();
+	UIState::onEnter(editor);
+	if (!form)
+	{
+		form = gameplay::Form::create("res/common/forms/welcome.form");
+		form->setFocus();
+	}
 }
-
-
-void WelcomeForm::onRender(EditorGame* editor)
-{
-	form->draw();
-}
-
 
 void WelcomeForm::onExit(EditorGame* editor)
 {
-	SAFE_RELEASE(form);
+	UIState::onExit(editor);
+}
+
+void WelcomeForm::controlEvent(Control* control, EventType evt)
+{
+	if (evt == CLICK)
+	{
+		if (strcmp("newProjectButton", control->getId()) == 0)
+		{
+			//editor->fsm->changeState();
+		}
+	}
 }

@@ -15,6 +15,9 @@
     <ClCompile Include="src\WelcomeForm.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\SceneForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Grid.h">
@@ -33,6 +36,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\EditorGame.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneForm.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TypeMap.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
