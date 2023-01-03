@@ -474,7 +474,13 @@ LRESULT CALLBACK __WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
     case WM_KILLFOCUS:
         break;
-
+    case WM_GETMINMAXINFO:
+    {
+        LPMINMAXINFO lpMMI = (LPMINMAXINFO)lParam;
+        lpMMI->ptMinTrackSize.x = gameplay::Platform::MIN_WIDTH;
+        lpMMI->ptMinTrackSize.y = gameplay::Platform::MIN_HEIGHT;
+    }
+    break;
     case WM_SIZE:
         // Window was resized.
         gameplay::Platform::resizeEventInternal((unsigned int)(short)LOWORD(lParam), (unsigned int)(short)HIWORD(lParam));

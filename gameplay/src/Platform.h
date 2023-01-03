@@ -61,6 +61,20 @@ public:
      */
     static void swapBuffers();
 
+    /**
+     * @brief It has minimum window width to prevent disappearing texts.
+     * Width of your screen resolution must be bigger than this value.
+     * 
+     */
+    static constexpr const int MIN_WIDTH = 1024;
+
+    /**
+     * @brief It has minimum window height to prevent disappearing texts.
+     * Height of your screen resolution must be bigger than this value.
+     * 
+     */
+    static constexpr const int MIN_HEIGHT = 768;
+
 private:
 
     /**
