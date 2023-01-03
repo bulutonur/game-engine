@@ -9,6 +9,7 @@
     <ClInclude Include="src\utest.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\TypeMapTest.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
