@@ -5,8 +5,10 @@
 
 using namespace gameplay;
 
-#include "WelcomeForm.h"
 #include "StateMachine.h"
+#include "WelcomeForm.h"
+#include "SceneForm.h"
+#include "TypeMap.h"
 
  /**
   * Main game class.
@@ -49,6 +51,7 @@ public:
     static EditorGame* getInstance();
 
     StateMachine<EditorGame>* fsm;
+    TypeMap<UIState> states;
 
 protected:
 

@@ -2,12 +2,17 @@
 
 void WelcomeForm::onEnter(EditorGame* editor)
 {
-	UIState::onEnter(editor);
 	if (!form)
 	{
 		form = gameplay::Form::create("res/common/forms/welcome.form");
 		form->setFocus();
+
+
+		Button* newProjectButton = static_cast<Button*>(form->getControl("newProjectButton"));
+		newProjectButton->addListener(this, Control::Listener::CLICK);
 	}
+
+	UIState::onEnter(editor);
 }
 
 void WelcomeForm::onExit(EditorGame* editor)
@@ -21,7 +26,7 @@ void WelcomeForm::controlEvent(Control* control, EventType evt)
 	{
 		if (strcmp("newProjectButton", control->getId()) == 0)
 		{
-			//editor->fsm->changeState();
+			editor->fsm->changeState(editor->states.get<SceneForm>());
 		}
 	}
 }

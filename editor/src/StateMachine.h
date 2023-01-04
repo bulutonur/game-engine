@@ -53,16 +53,7 @@ public:
 
 	virtual ~StateMachine()
 	{
-		if (currentState)
-		{
-			delete currentState;
-			currentState = nullptr;
-		}
-		if (globalState)
-		{
-			delete globalState;
-			globalState = nullptr;
-		}
+		
 	}
 
 	//use these methods to initialize the FSM

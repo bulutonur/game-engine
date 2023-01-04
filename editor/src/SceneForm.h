@@ -9,6 +9,8 @@ public:
 
 	virtual void onEnter(EditorGame* editor) override;
 
+	virtual void controlEvent(Control* control, EventType evt) override;
+
 };
 
 #endif

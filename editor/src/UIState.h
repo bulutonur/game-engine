@@ -18,12 +18,14 @@ public:
 
 	virtual ~UIState()
 	{
-
+		// Clear to prevent memory leaks
+		SAFE_RELEASE(form);
 	}
 
 	virtual void onEnter(EditorGame* editor) override
 	{
 		this->editor = editor;
+		form->setEnabled(true);
 	}
 
 
@@ -38,8 +40,10 @@ public:
 
 	virtual void onExit(EditorGame* editor) override
 	{
-		// Clear to prevent memory leaks
-		SAFE_RELEASE(form);
+		if (form)
+		{
+			form->setEnabled(false);
+		}
 	}
 
 

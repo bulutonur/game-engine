@@ -30,7 +30,10 @@ void EditorGame::initialize()
     }
 
     fsm = new StateMachine<EditorGame>(this);
-    fsm->changeState(new WelcomeForm());
+    states.add<WelcomeForm>(new WelcomeForm());
+    states.add<SceneForm>(new SceneForm());
+    // @TODO Setted SceneForm to fast debugging. Set WelcomeForm
+    fsm->changeState(states.get<SceneForm>());
 }
 
 void EditorGame::finalize()
