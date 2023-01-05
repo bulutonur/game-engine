@@ -120,6 +120,16 @@ public:
     };
 
     /**
+     * @brief Orientation type of the control
+     *  Default value is ORIENTATION_HORIZONTAL
+     */
+    enum class Orientation
+    {
+        ORIENTATION_HORIZONTAL,
+        ORIENTATION_VERTICAL
+    };
+
+    /**
      * Implement Control::Listener and call Control::addListener()
      * in order to listen for events on controls.
      */
@@ -980,6 +990,22 @@ public:
      */
     virtual void setAnimationPropertyValue(int propertyId, AnimationValue* value, float blendWeight = 1.0f);
 
+    /**
+     * @brief Set the Orientation
+     * @see Control::orientation
+     * 
+     * @param orientation new Orientation
+     */
+    void setOrientation(const Orientation& orientation);
+
+    /**
+     * @brief Get the Orientation 
+     * @see Control::orientation
+     * 
+     * @return const Orientation& 
+     */
+    const Orientation& getOrientation() const;
+
 protected:
 
     /**
@@ -1474,6 +1500,12 @@ protected:
      * The control's parent container.
      */
     Container* _parent;
+
+    /**
+     * @brief Orientation of the control
+     * Default value is ORIENTATION_HORIZONTAL
+     */
+    Orientation orientation;
 
 private:
 

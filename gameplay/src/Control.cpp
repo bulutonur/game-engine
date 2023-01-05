@@ -10,7 +10,8 @@ namespace gameplay
 Control::Control()
     : _id(""), _boundsBits(0), _dirtyBits(DIRTY_BOUNDS | DIRTY_STATE), _consumeInputEvents(true), _alignment(ALIGN_TOP_LEFT),
     _autoSize(AUTO_SIZE_BOTH), _listeners(NULL), _style(NULL), _visible(true), _opacity(0.0f), _zIndex(-1),
-    _contactIndex(INVALID_CONTACT_INDEX), _focusIndex(-1), _canFocus(false), _state(NORMAL), _parent(NULL), _styleOverridden(false), _skin(NULL)
+    _contactIndex(INVALID_CONTACT_INDEX), _focusIndex(-1), _canFocus(false), _state(NORMAL), _parent(NULL), _styleOverridden(false), _skin(NULL),
+    orientation(Orientation::ORIENTATION_HORIZONTAL)
 {
     GP_REGISTER_SCRIPT_EVENTS();
 }
@@ -1878,6 +1879,17 @@ bool Control::parseCoordPair(const char* s, float* v1, float* v2, bool* v1Percen
     *v1 = parseCoord(v1Str.c_str(), v1Percentage);
     *v2 = parseCoord(v2Str.c_str(), v2Percentage);
     return true;
+}
+
+void Control::setOrientation(const Orientation& orientation)
+{
+    // @TODO implement actions on change
+    this->orientation = orientation;
+}
+
+const Control::Orientation& Control::getOrientation() const
+{
+    return orientation;
 }
 
 }
