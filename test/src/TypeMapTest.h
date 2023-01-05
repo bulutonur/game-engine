@@ -5,6 +5,8 @@
 
 #include "TypeMap.h"
 
+using namespace gameplay;
+
 
 class A
 {
